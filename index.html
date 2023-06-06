@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <style>
+        header {
+            background-color: #DA291C;
+            position: sticky;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+        }
+        header h1{
+            color: #FFC72C;
+        }
+        .navbar-nav .nav-link.active{
+            background-color: #fff;
+            color: #DA291C;
+        }
+        .navbar-nav .nav-link {
+            color: #FFC72C;
+            font-weight: bolder;
+        }
+        section .container{
+            margin-top: 0.5em;
+        }  
+        section .carousel-caption{
+            width: 100%;
+            left: 0;
+        }
+        section h2 {
+            color: #FFC72C;
+            background-color: #DA291C;
+        }
+        .card-image {
+            height: 230px;
+            object-fit: cover;
+        }
+        .btn-primary{
+            background-color: #DA291C;
+            color: #FFC72C;
+            border: none;
+            font-weight: bolder;
+            width: 100%;
+        }
+        .btn-primary:hover{
+            background-color: #FFC72C;
+            color: #DA291C;
+        }
+        .row header{
+            z-index: 0;
+        }
+        .card {
+            margin-top: 0.5em;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .row {
+                display: grid;
+                grid-template-columns: repeat(2, 48%);
+                column-gap: 2%;
+            }
+            .card{
+                height: 510px;
+            } 
+        }
+        @media screen and (min-width: 1024px){
+            .row {
+                display: grid;
+                grid-template-columns: repeat(3, 32%);
+                column-gap: 2%;
+            }
+            .card{
+                height: 510px;
+            }  
+        }
+        @media screen and (max-width: 767px){
+            .row {
+                display: grid;
+                grid-template-columns: repeat(1, 100%);
+                column-gap: 0%;
+            }
+            #destaques h2{
+                font-size: 1em;
+            }
+        }
+        
+
+        
+    </style>
+    <title>McRonad's</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>McRonald's</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#destaques">Destaques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ofertas">Ofertas</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>            
+        </div>                
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="destaques">
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="carousel-image d-block w-100" src="https://pixabay.com/get/ge5d9e764205175c0b638bf3aa5d2b40ebb1a603d2b6efaf96b7ead6077c53cc348b8a943b067d2929d179d95fb5f1d2917938062c9ccdc24afeae017cc243fc3f71f7d16a27516e6e4ca8d257a68db42_1280.jpg">
+                            <div class="carousel-caption">
+                                <h2>Combo Cheddar</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="carousel-image d-block w-100" src="https://pixabay.com/get/g5cf86012dc242a576b634e6602327371b2e1677f1d8e3742a980f891943f1b445f9878da3bb651e2c76b531fd8899ce45d6c2454e4c0cdb0da701150b0ea2fe6fd59738f8fefce4aeae85eccf7d9355c_1280.jpg">
+                            <div class="carousel-caption">
+                                <h2>Combo Molho Especial</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="carousel-image d-block w-100" src="https://pixabay.com/get/g177a0799f9bd3f600136425a6e515adca2d6d9fda5dbeaa551937358634d46c2415434d4cbae3662f73737ebb8eb618864760e3cfec7afe21525a5419ea2b352763fdfa12a062cfc5ee15a77b08beab1_1280.jpg">
+                            <div class="carousel-caption">
+                                <h2>Combo Molho Picante</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ofertas">
+            <div class="container">
+                <div class="row">
+                    <div class="coluna">
+                        <article class="card">
+                            <header class="card-header">
+                                Para Veganos
+                            </header>
+                            
+                            <img class="card-image" src="https://pixabay.com/get/g28ffb54d456ab974f0b372b73e9a809d728e898b8032fd088f768e8d7127d1c6945bf98897fcf34e4c73c8ec5c74b71aa7430ac3302cc6b90da45896a29c4fa7f9164e3fd49b744ea48f796f28d63aa7_1280.jpg"/>
+                            <div class="card-body">
+                                <h4 class="card-title">Hamburger "Free" Boi</h4>                                
+                                    <p class="card-text">
+                                        Hamburger com carne totalmente de soja, muito saboroso, ZERO conteúdo animal.
+                                    </p>                                
+                                <strong>R$ 63,50</strong>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="btn btn-primary">Peça Já!</a>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="coluna">
+                        <article class="card">
+                            <header class="card-header">
+                                Carne Branca
+                            </header>
+                            
+                            <img class="card-image" src="https://pixabay.com/get/gf7ace7c83f8ba0cb5062c0963055d039eaacaa944bfcd14b2c0dc739cf114f65276d5a5a413bd050290e66bb3ea1a650f2f6b2f588a5e57f57409889a68aeccdef2cc2b0d38a17b4ea9c3247d6ff864f_1280.jpg"/>
+                            <div class="card-body">
+                                <h4 class="card-title">Hamburger Frango Voador</h4>                                
+                                    <p class="card-text">
+                                        Hamburger com carne de frango, super leve para um lanche rápido.
+                                    </p> 
+                                <strong>R$ 49,50</strong>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="btn btn-primary">Peça Já!</a>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="coluna">
+                        <article class="card">
+                            <header class="card-header">
+                                Barbecue Please
+                            </header>
+                            
+                            <img class="card-image" src="https://pixabay.com/get/g071fbe91c3f4d775fc63591d50f2d6f79128a1eaed6618db206b1be3995f0b0aeb955456d3162cf4f699919e996c11807aff7e6c3f5c8d0eaafc691af0e3decd97fefcd2573208a7e7e971876ee07309_1280.jpg"/>
+                            <div class="card-body">
+                                <h4 class="card-title">Hamburger Barbecue na Brasa</h4>                                
+                                    <p class="card-text">
+                                        Hamburger com carne de picanha feito na brasa, dispensa comentários.
+                                    </p>                                
+                                <strong>R$ 70,50</strong>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="btn btn-primary">Peça Já!</a>
+                            </footer>
+                        </article>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
