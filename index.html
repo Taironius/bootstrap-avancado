@@ -57,13 +57,6 @@
             margin-top: 0.5em;
             height: 510px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            .row {
-                display: grid;
-                grid-template-columns: repeat(2, 48%);
-                column-gap: 2%;
-            }
-        }
         @media screen and (min-width: 1024px){
             .row {
                 display: grid;
@@ -73,6 +66,13 @@
             .carousel-item{
                 height: 700px;
                 object-fit: cover;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .row {
+                display: grid;
+                grid-template-columns: repeat(2, 48%);
+                column-gap: 2%;
             }
         }
         @media screen and (max-width: 767px){
