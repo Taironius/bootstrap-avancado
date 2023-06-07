@@ -36,7 +36,7 @@
             background-color: #DA291C;
         }
         .card-image {
-            height: 230px;
+            height: 204px;
             object-fit: cover;
         }
         .btn-primary{
@@ -55,6 +55,7 @@
         }
         .card {
             margin-top: 0.5em;
+            height: 510px;
         }
         @media screen and (min-width: 768px) and (max-width: 1023px) {
             .row {
@@ -62,9 +63,6 @@
                 grid-template-columns: repeat(2, 48%);
                 column-gap: 2%;
             }
-            .card{
-                height: 510px;
-            } 
         }
         @media screen and (min-width: 1024px){
             .row {
@@ -72,9 +70,10 @@
                 grid-template-columns: repeat(3, 32%);
                 column-gap: 2%;
             }
-            .card{
-                height: 510px;
-            }  
+            .carousel-item{
+                height: 700px;
+                object-fit: cover;
+            }
         }
         @media screen and (max-width: 767px){
             .row {
@@ -120,19 +119,19 @@
                 <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div data-bs-interval="3000" class="carousel-item active">
-                            <img class="carousel-image d-block w-100" src="https://pixabay.com/get/ge5d9e764205175c0b638bf3aa5d2b40ebb1a603d2b6efaf96b7ead6077c53cc348b8a943b067d2929d179d95fb5f1d2917938062c9ccdc24afeae017cc243fc3f71f7d16a27516e6e4ca8d257a68db42_1280.jpg">
+                            <img class="carousel-image d-block w-100" src="/imagens/carousel/chedar.jpg">
                             <div class="carousel-caption">
                                 <h2>Combo Cheddar</h2>
                             </div>
                         </div>
                         <div data-bs-interval="3000" class="carousel-item">
-                            <img class="carousel-image d-block w-100" src="https://pixabay.com/get/g5cf86012dc242a576b634e6602327371b2e1677f1d8e3742a980f891943f1b445f9878da3bb651e2c76b531fd8899ce45d6c2454e4c0cdb0da701150b0ea2fe6fd59738f8fefce4aeae85eccf7d9355c_1280.jpg">
+                            <img class="carousel-image d-block w-100" src="/imagens/carousel/especial.jpg">
                             <div class="carousel-caption">
                                 <h2>Combo Molho Especial</h2>
                             </div>
                         </div>
                         <div data-bs-interval="3000" class="carousel-item">
-                            <img class="carousel-image d-block w-100" src="https://pixabay.com/get/g177a0799f9bd3f600136425a6e515adca2d6d9fda5dbeaa551937358634d46c2415434d4cbae3662f73737ebb8eb618864760e3cfec7afe21525a5419ea2b352763fdfa12a062cfc5ee15a77b08beab1_1280.jpg">
+                            <img class="carousel-image d-block w-100" src="/imagens/carousel/picante.jpg">
                             <div class="carousel-caption">
                                 <h2>Combo Molho Picante</h2>
                             </div>
@@ -161,7 +160,7 @@
                                 Para Veganos
                             </header>
                             
-                            <img class="card-image" src="https://pixabay.com/get/g28ffb54d456ab974f0b372b73e9a809d728e898b8032fd088f768e8d7127d1c6945bf98897fcf34e4c73c8ec5c74b71aa7430ac3302cc6b90da45896a29c4fa7f9164e3fd49b744ea48f796f28d63aa7_1280.jpg"/>
+                            <img class="card-image" src="/imagens/cards/burger.jpg"/>
                             <div class="card-body">
                                 <h4 class="card-title">Hamburger "Free" Boi</h4>                                
                                     <p class="card-text">
@@ -180,7 +179,7 @@
                                 Carne Branca
                             </header>
                             
-                            <img class="card-image" src="https://pixabay.com/get/gf7ace7c83f8ba0cb5062c0963055d039eaacaa944bfcd14b2c0dc739cf114f65276d5a5a413bd050290e66bb3ea1a650f2f6b2f588a5e57f57409889a68aeccdef2cc2b0d38a17b4ea9c3247d6ff864f_1280.jpg"/>
+                            <img class="card-image" src="/imagens/cards/chicken.jpg"/>
                             <div class="card-body">
                                 <h4 class="card-title">Hamburger Frango Voador</h4>                                
                                     <p class="card-text">
@@ -199,7 +198,7 @@
                                 Barbecue Please
                             </header>
                             
-                            <img class="card-image" src="https://pixabay.com/get/g071fbe91c3f4d775fc63591d50f2d6f79128a1eaed6618db206b1be3995f0b0aeb955456d3162cf4f699919e996c11807aff7e6c3f5c8d0eaafc691af0e3decd97fefcd2573208a7e7e971876ee07309_1280.jpg"/>
+                            <img class="card-image" src="/imagens/cards/barbecue.jpg"/>
                             <div class="card-body">
                                 <h4 class="card-title">Hamburger Barbecue na Brasa</h4>                                
                                     <p class="card-text">
